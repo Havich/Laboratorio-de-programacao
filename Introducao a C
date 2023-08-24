@@ -1,0 +1,29 @@
+/*Tendo como dados de entrada a altura e o sexo de uma pessoa, construa um programa que calcule seu peso ideal, 
+utilizando a seguinte fórmula: peso ideal = (72.7*h) – 58*/
+
+// Inclusão de bibliotecas
+#include <stdio.h>
+
+//Função principal
+int main()
+	{
+		
+	//Declaração de variáveis
+	float altura, peso;
+	char sexo;
+	
+	//Entrada de dados
+	printf("Digite o seu sexo (m) ou (f)\n");
+	scanf("%c", &sexo);
+	printf("Digite sua altura\n");
+	scanf("%f", &altura);
+	
+	//Calculo
+	peso = (72.7 * altura) - 58;
+	
+	//Saída de dados
+	printf("Sexo: %c\nAltura: %.2f\nPeso ideal: %.2f", sexo, altura, peso);
+	
+	//Fim da função principal
+	return 0;
+	}
