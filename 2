@@ -1,0 +1,24 @@
+//Mostrar a média aritmética entre 3 números passados pelo usuário
+
+//Inculusão de bibliotecas
+#include <stdio.h>
+
+//Função principal
+int main()
+{
+  //Declaração de variáveis
+  float n1, n2, n3, med;
+
+  //Entrada de dados
+  printf("Digite as 3 notas\n");
+  scanf("%f%f%f", &n1, &n2, &n3);
+  
+  //Calculo
+  med = (n1 + n2 + n3) / 3;
+
+  //Saída de dados
+  printf("A media e = %.2f\n", med);
+
+  //Fim da função principal
+  return 0; 
+}
