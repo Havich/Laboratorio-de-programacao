@@ -1,0 +1,26 @@
+//Lê o valor de hora e informa quantos minutos se passaram desde o início do dia
+
+//Inclusão de bibliotecas
+#include <stdio.h>
+
+//Função principal
+int main()
+{
+  //Declaração de variáveis
+  int hora, min, total;
+
+  //Entrada de dados
+  printf("Digite a hora\n");
+  scanf("%d", &hora);
+  printf("Digite os minutos\n");
+  scanf("%d", &min);
+
+  //Cálculo
+  total = (hora * 60) + min;
+
+  //Saída de dados
+  printf("Se passaram %d minutos desse dia\n", total);
+
+  //Fim da função principal
+  return 0;
+}
