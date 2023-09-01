@@ -1,0 +1,30 @@
+/*Entre com a a base e a altura de um retângulo e mostre os resultados:
+Perímetro (Perímetro é igual à soma dos 4 lados)
+Área (Área é igual à lado vezes lado)*/
+
+//Inclusão de bibliotecas
+#include <stdio.h>
+
+//Função principal
+int main()
+{
+
+    //Declaração de variáveis
+    float base, altura, perim, area;
+
+    //Entrada de dados
+    printf("Digite o valor da base\n");
+    scanf("%f", &base);
+    printf("Digite o valor da altura\n");
+    scanf("%f", &altura);
+
+    //Calculo
+    perim = base * 2 + altura * 2;
+    area = base * altura;
+    
+    //Saída de dados
+    printf("Perimetro = %.2f\nArea = %.2f", perim, area);
+    
+    //Fim da função principal
+    return 0;
+}
