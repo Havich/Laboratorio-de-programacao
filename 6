@@ -1,0 +1,28 @@
+/*Lê dois números e mostra os seguintes resultados:
+dividendo, divisor, quociente e resto*/
+
+//Inclusao de bibliotecas
+#include <stdio.h>
+
+//Função principal
+int main()
+{
+	//Declaraçao de variaveis
+	float n1, n2, div, result;
+	
+	//Entrada de dados
+  printf("Digite o valor 1\n");
+  scanf("%f", &n1);
+  printf("Digite o valor 2\n");
+  scanf("%f", &n2);
+    
+  //Cálculo
+  div = n1 / n2;
+  result = ((int) n1 % (int) n2) + div - (int) div;
+	
+  //Saída de dados
+	printf("Dividendo: %.2f\nDivisor: %.2f\nQuociente: %.2f\nResto: %.2f", n1, n2, div, result);	
+	
+	//Fim da função principal
+	return 0;
+}
