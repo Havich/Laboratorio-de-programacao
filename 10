@@ -1,0 +1,27 @@
+//Lê o raio de um círculo e mostre como saída o perímetro (2*ñ*Raio) e a área (ñ*Raio^2).
+
+//Inclusão de bibliotecas
+#include <stdio.h>
+
+//Função principal
+int main()
+{
+
+    //Declaração de variáveis
+    float raio, perim, area;
+    #define pi 3.1415
+
+    //Entrada de dados
+    printf("Digite o valor do raio\n");
+    scanf("%f", &raio);
+
+    //Calculo
+    perim = 2 * pi * raio;
+    area = pi * (raio * raio);
+    
+    //Saída de dados
+    printf("Perimetro = %.2f\nArea = %.2f", perim, area);
+    
+    //Fim da função principal
+    return 0;
+}
