@@ -1,0 +1,27 @@
+//Leia o numerador O denominador de uma fração e transforme-o em um número decimal.
+
+//Inclusão de bibliotecas
+#include <stdio.h>
+
+//Função principal
+int main()
+{
+
+    //Declaração de variáveis
+    float num, denom, valor;
+
+    //Entrada de dados
+    printf("Digite o valor do numerador\n");
+    scanf("%f", &num);
+    printf("Digite o valor da denominador\n");
+    scanf("%f", &denom);
+    
+    //Calculo
+    valor = num / denom;
+    
+    //Saída de dados
+    printf("Valor = %.2f", valor);
+    
+    //Fim da função principal
+    return 0;
+}
