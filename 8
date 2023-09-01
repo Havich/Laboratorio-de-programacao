@@ -1,0 +1,25 @@
+//Programa que le um saldo de uma aplicação e imprime um novo saldo com reajuste de 1% 
+
+//Inclusão de bibliotecas
+#include <stdio.h>
+
+//Função principal
+int main()
+{
+
+    //Declaração de variáveis
+    float saldoant, saldonovo;
+
+    //Entrada de dados
+    printf("Digite o valor do saldo\n");
+    scanf("%f", &saldoant);
+
+    //Calculo
+    saldonovo = saldoant * 1.01;
+    
+    //Saída de dados
+    printf("Novo saldo = %.2f\n", saldonovo);
+    
+    //Fim da função principal
+    return 0;
+}
