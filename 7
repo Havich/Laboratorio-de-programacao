@@ -1,0 +1,30 @@
+//Lê quatro números e mostre a media ponderada para os pesos 1, 2, 3 e 4
+
+//Inclusao de bibliotecas
+#include <stdio.h>
+
+//Função principal
+int main()
+{
+  //Declaraçao de variaveis
+  float n1, n2, n3, n4, result;
+	
+  //Entrada de dados
+  printf("Digite a nota 1\n");
+  scanf("%f", &n1);
+  printf("Digite a nota 2\n");
+  scanf("%f", &n2);
+  printf("Digite a nota 3\n");
+  scanf("%f", &n3);
+  printf("Digite a nota 4\n");
+  scanf("%f", &n4);
+    
+  //Cálculo
+  result = (n1 + 2 * n2 + 3 * n3 + 4 * n4) / 10;
+	
+  //Saída de dados
+  printf("Media ponderada = %.2f", result);	
+	
+  //Fim da função principal
+  return 0;
+}
