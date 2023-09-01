@@ -1,0 +1,27 @@
+//Calcule e mostre a área de um triângulo (área é igual a (base x altura) dividido por 2)
+
+//Inclusão de bibliotecas
+#include <stdio.h>
+
+//Função principal
+int main()
+{
+
+    //Declaração de variáveis
+    float base, altura, area;
+
+    //Entrada de dados
+    printf("Digite o valor da base\n");
+    scanf("%f", &base);
+    printf("Digite o valor da altura\n");
+    scanf("%f", &altura);
+    
+    //Calculo
+    area = (base * altura) / 2;
+    
+    //Saída de dados
+    printf("Area = %.2f", area);
+    
+    //Fim da função principal
+    return 0;
+}
